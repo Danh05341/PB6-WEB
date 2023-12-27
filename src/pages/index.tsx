@@ -44,7 +44,7 @@ export default function Home() {
 		setIsLoading(true);
 		try {
 			await axios
-				.post('http://localhost:8000/plant/ai/', formdata, {
+				.post('http://spring.doannhat2.click:8000/plant/ai/', formdata, {
 					headers: {
 						// 'Access-Control-Allow-Origin': '*',
 						'Content-type': 'application/json; charset=UTF-8',
@@ -52,6 +52,7 @@ export default function Home() {
 				})
 				.then(res => {
 					setResult(res?.data);
+					console.log(res?.data);
 					setIsLoading(false);
 				});
 		} catch (error) {}
