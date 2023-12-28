@@ -52,7 +52,6 @@ export default function Home() {
 				})
 				.then(res => {
 					setResult(res?.data);
-					console.log(res?.data);
 					setIsLoading(false);
 				});
 		} catch (error) {}
