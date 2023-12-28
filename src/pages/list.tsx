@@ -28,7 +28,7 @@ export default function List() {
 			await axios
 				.get('http://spring.doannhat2.click:8000/plant/predict_list/', {
 					headers: {
-						// 'Access-Control-Allow-Origin': '*',
+						'Access-Control-Allow-Origin': '*',
 						'Content-Type': 'application/json',
 					},
 				})
