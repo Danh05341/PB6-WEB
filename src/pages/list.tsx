@@ -26,7 +26,7 @@ export default function List() {
 	const getHistories = async () => {
 		try {
 			await axios
-				.get('http://localhost:8000/plant/predict_list/', {
+				.get('http://spring.doannhat2.click:8000/plant/predict_list/', {
 					headers: {
 						// 'Access-Control-Allow-Origin': '*',
 						'Content-Type': 'application/json',
