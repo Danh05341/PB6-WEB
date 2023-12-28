@@ -163,7 +163,7 @@ export default function List() {
 	const getHistories = async (page: number) => {
 		try {
 			const response = await axios.get(
-				'http://spring.doannhat2.click:8000/plant/predict_list',
+				'http://localhost:8000/plant/predict_list',
 				{
 					params: { page },
 					headers: {
